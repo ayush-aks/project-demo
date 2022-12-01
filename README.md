@@ -6,7 +6,7 @@ D&S is a fully-featured web application, built with the MERN stack.
 ## Installation and usage
 1) Clone this repository  
 ```
-git clone https://github.com/ayush-aks/demand-and-service
+git clone https://github.com/ayush-aks/project-demo
 ```
 2) Install dependencies  
 ```
