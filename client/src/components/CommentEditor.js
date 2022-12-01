@@ -60,9 +60,9 @@ import {
             <Typography variant="h5">
               {comment ? <>Reply</> : <>Comment</>}
             </Typography>
-            <Link to="https://commonmark.org/help/" target="_blank">
+            {/* <Link to="https://commonmark.org/help/" target="_blank">
               Markdown Help
-            </Link>
+            </Link> */}
           </HorizontalStack>
   
           <Box component="form" onSubmit={handleSubmit}>

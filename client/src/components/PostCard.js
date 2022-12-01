@@ -48,22 +48,22 @@ const PostCard = (props) => {
     maxHeight = 250;
   }
 
-  const handleDeletePost = async (e) => {
-    e.stopPropagation();
+  // const handleDeletePost = async (e) => {
+  //   e.stopPropagation();
 
-    if (!confirm) {
-      setConfirm(true);
-    } else {
-      setLoading(true);
-      await deletePost(post._id, isLoggedIn());
-      setLoading(false);
-      if (preview) {
-        removePost(post);
-      } else {
-        navigate("/");
-      }
-    }
-  };
+  //   if (!confirm) {
+  //     setConfirm(true);
+  //   } else {
+  //     setLoading(true);
+  //     await deletePost(post._id, isLoggedIn());
+  //     setLoading(false);
+  //     if (preview) {
+  //       removePost(post);
+  //     } else {
+  //       navigate("/");
+  //     }
+  //   }
+  // };
 
   const handleEditPost = async (e) => {
     e.stopPropagation();
@@ -144,7 +144,7 @@ const PostCard = (props) => {
                         <AiFillEdit color={iconColor} />
                       )}
                     </IconButton>
-                    <IconButton
+                    {/* <IconButton
                       disabled={loading}
                       size="small"
                       onClick={handleDeletePost}
@@ -154,7 +154,7 @@ const PostCard = (props) => {
                       ) : (
                         <BiTrash color={theme.palette.error.main} />
                       )}
-                    </IconButton>
+                    </IconButton> */}
                   </HorizontalStack>
                 )}
               </Box>

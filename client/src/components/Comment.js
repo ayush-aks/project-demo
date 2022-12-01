@@ -52,10 +52,10 @@ const Comment = (props) => {
     setEditing(false);
   };
 
-  const handleDelete = async () => {
-    await deleteComment(comment._id, user);
-    removeComment(comment);
-  };
+  // const handleDelete = async () => {
+  //   await deleteComment(comment._id, user);
+  //   removeComment(comment);
+  // };
 
   let style = {
     backgroundColor: theme.palette.grey[100],
@@ -136,13 +136,13 @@ const Comment = (props) => {
                         <AiFillEdit color={iconColor} />
                       )}
                     </IconButton>
-                    <IconButton
+                    {/* <IconButton
                       variant="text"
                       size="small"
                       onClick={handleDelete}
                     >
                       <BiTrash color={theme.palette.error.main} />
-                    </IconButton>
+                    </IconButton> */}
                   </HorizontalStack>
                 )}
               </HorizontalStack>

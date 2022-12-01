@@ -93,7 +93,7 @@ const Navbar = () => {
             color={theme.palette.primary.main}
           >
             <Link href="/" color="inherit" underline="none">
-              D&S
+              Demand & Service
             </Link>
           </Typography>
         </HorizontalStack>
@@ -102,7 +102,7 @@ const Navbar = () => {
           <Box component="form" onSubmit={handleSubmit}>
             <TextField
               size="small"
-              label="Search for posts..."
+              label="Search for demands..."
               sx={{ flexGrow: 1, maxWidth: 300 }}
               onChange={handleChange}
               value={search}
@@ -144,7 +144,7 @@ const Navbar = () => {
         <Box component="form" onSubmit={handleSubmit} mt={2}>
           <TextField
             size="small"
-            label="Search for posts..."
+            label="Search for demands..."
             fullWidth
             onChange={handleChange}
             value={search}
